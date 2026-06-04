@@ -25,7 +25,7 @@ export function SectionWrapper({
     <section
       id={id}
       className={cn(
-        "py-16 sm:py-20 lg:py-28 px-4 sm:px-6 lg:px-8",
+        "py-12 sm:py-20 lg:py-28 px-4 sm:px-6 lg:px-8",
         backgroundClasses[background],
         className
       )}

@@ -63,7 +63,7 @@ export function ProductShowcase() {
               <img
                 src={ap("/images/product-showcase/product.webp")}
                 alt="点点智能盲文学习机"
-                className="w-3/4 h-auto object-contain drop-shadow-[0_20px_40px_rgba(91,200,255,0.25)]"
+                className="w-4/5 sm:w-3/4 h-auto max-h-[40vh] sm:max-h-none object-contain drop-shadow-[0_20px_40px_rgba(91,200,255,0.25)]"
               />
             </div>
           </motion.div>

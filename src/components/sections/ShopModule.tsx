@@ -65,7 +65,7 @@ export function ShopModule() {
               )}
             </div>
 
-            <h3 className="text-2xl lg:text-3xl font-bold text-[#1F2937] mb-4">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#1F2937] mb-4">
               {product.name}
             </h3>
 
@@ -175,7 +175,7 @@ function ImageGallery() {
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Image display area */}
-      <div className="relative overflow-hidden rounded-2xl min-h-[400px] lg:min-h-[500px] flex items-center justify-center">
+      <div className="relative overflow-hidden rounded-2xl min-h-[280px] sm:min-h-[400px] lg:min-h-[500px] flex items-center justify-center">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.img
             key={current}

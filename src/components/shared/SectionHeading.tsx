@@ -29,11 +29,11 @@ export function SectionHeading({
       whileInView="visible"
       viewport={{ once: true, margin: "-80px" }}
     >
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1F2937] mb-4 tracking-tight">
+      <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#1F2937] mb-3 sm:mb-4 tracking-tight">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-lg text-[#6B7280] max-w-2xl mx-auto leading-relaxed">
+        <p className="text-base sm:text-lg text-[#6B7280] max-w-2xl mx-auto leading-relaxed">
           {subtitle}
         </p>
       )}

@@ -100,7 +100,7 @@ export function VideoShowcase() {
       {/* Horizontal scroll container */}
       <div
         ref={containerRef}
-        className="flex overflow-x-auto snap-x snap-mandatory scrollbar-none h-[92vh]"
+        className="flex overflow-x-auto snap-x snap-mandatory scrollbar-none h-[85vh] sm:h-[92vh]"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {videoSlides.map((slide, index) => (
@@ -199,7 +199,7 @@ function VideoSlideItem({
   return (
     <div
       ref={inViewRef}
-      className="relative h-[92vh] w-full flex items-center justify-center overflow-hidden"
+      className="relative h-[85vh] sm:h-[92vh] w-full flex items-center justify-center overflow-hidden"
     >
       {/* Video */}
       <video
@@ -228,7 +228,7 @@ function VideoSlideItem({
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             {slide.title && (
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-2 tracking-tight">
+              <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-2 tracking-tight">
                 {slide.title}
               </h2>
             )}

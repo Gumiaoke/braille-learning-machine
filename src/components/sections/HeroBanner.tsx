@@ -69,10 +69,10 @@ export function HeroBanner() {
       </div>
 
       {/* Soft glow effect */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#5BC8FF]/10 rounded-full blur-3xl animate-glow-pulse pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] bg-[#5BC8FF]/10 rounded-full blur-3xl animate-glow-pulse pointer-events-none" />
 
       {/* Content */}
-      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-28 lg:py-32">
         <div className="grid lg:grid-cols-5 gap-4 lg:gap-6 items-center">
           {/* Left column — Text (2/5) */}
           <motion.div
@@ -84,7 +84,7 @@ export function HeroBanner() {
             <Badge variant="functional" className="mb-6">
               全新上市
             </Badge>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#1F2937] leading-tight tracking-tight mb-6">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#1F2937] leading-tight tracking-tight mb-4 sm:mb-6">
               让每一个孩子
               <br />
               <span className="text-[#5BC8FF]">都能触摸知识</span>
@@ -138,7 +138,7 @@ export function HeroBanner() {
                 <img
                   src={ap("/images/hero-page/product.webp")}
                   alt="点点智能盲文学习机"
-                  className="w-3/5 h-auto max-h-[50vh] object-contain drop-shadow-[0_20px_40px_rgba(91,200,255,0.3)]"
+                  className="w-4/5 sm:w-3/5 h-auto max-h-[35vh] sm:max-h-[50vh] object-contain drop-shadow-[0_20px_40px_rgba(91,200,255,0.3)]"
                 />
               </motion.div>
             </div>

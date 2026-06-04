@@ -47,20 +47,20 @@ export function Navbar() {
         aria-label="主导航"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-14 lg:h-20">
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center gap-3 font-bold text-3xl text-[#1F2937] hover:opacity-80 transition-opacity"
+              className="flex items-center gap-2 sm:gap-3 font-bold text-xl sm:text-3xl text-[#1F2937] hover:opacity-80 transition-opacity"
               aria-label="返回首页"
             >
               {/* Logo icon */}
               <img
                 src={ap("/images/hero/logo.webp")}
                 alt="点点智能"
-                width={48}
-                height={48}
-                className="shrink-0 rounded-lg object-cover"
+                width={36}
+                height={36}
+                className="shrink-0 rounded-lg object-cover sm:w-12 sm:h-12"
               />
               <span>{SITE_NAME}</span>
             </Link>
