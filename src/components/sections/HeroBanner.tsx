@@ -5,6 +5,7 @@ import { ShoppingCart, ChevronDown } from "lucide-react";
 import { Button } from "@/components/shared/Button";
 import { Badge } from "@/components/shared/Badge";
 import { DotCharacter } from "@/components/dot/DotCharacter";
+import { ap } from "@/utils/path";
 import { fadeInUp, fadeInLeft, fadeInRight } from "@/styles/animations";
 
 export function HeroBanner() {
@@ -135,7 +136,7 @@ export function HeroBanner() {
                 }}
               >
                 <img
-                  src="/images/hero-page/product.webp"
+                  src={ap("/images/hero-page/product.webp")}
                   alt="点点智能盲文学习机"
                   className="w-3/5 h-auto max-h-[50vh] object-contain drop-shadow-[0_20px_40px_rgba(91,200,255,0.3)]"
                 />

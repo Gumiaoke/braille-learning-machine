@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ShoppingCart } from "lucide-react";
 import { cn } from "@/utils/cn";
+import { ap } from "@/utils/path";
 import { NAV_LINKS, SITE_NAME } from "@/data/site-config";
 import { useCart } from "@/hooks/useCart";
 import Link from "next/link";
@@ -55,7 +56,7 @@ export function Navbar() {
             >
               {/* Logo icon */}
               <img
-                src="/images/hero/logo.webp"
+                src={ap("/images/hero/logo.webp")}
                 alt="点点智能"
                 width={48}
                 height={48}

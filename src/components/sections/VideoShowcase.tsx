@@ -4,6 +4,7 @@ import { useRef, useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ap } from "@/utils/path";
 
 interface VideoSlide {
   src: string;
@@ -203,7 +204,7 @@ function VideoSlideItem({
       {/* Video */}
       <video
         ref={videoRef}
-        src={slide.src}
+        src={ap(slide.src)}
         poster={slide.poster}
         className="absolute inset-0 w-full h-full object-contain"
         muted

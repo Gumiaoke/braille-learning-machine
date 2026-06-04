@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import { DotCharacter } from "@/components/dot/DotCharacter";
 import { cn } from "@/utils/cn";
+import { ap } from "@/utils/path";
 
 interface PaymentModalProps {
   isOpen: boolean;
@@ -19,12 +20,12 @@ export function PaymentModal({ isOpen, onClose, amount }: PaymentModalProps) {
 
   const qrCodes: Record<PaymentMethod, { src: string; label: string; color: string }> = {
     wechat: {
-      src: "/images/alipay/微信二维码.png",
+      src: ap("/images/alipay/微信二维码.png"),
       label: "微信支付",
       color: "#07C160",
     },
     alipay: {
-      src: "/images/alipay/支付宝二维码.png",
+      src: ap("/images/alipay/支付宝二维码.png"),
       label: "支付宝",
       color: "#1677FF",
     },

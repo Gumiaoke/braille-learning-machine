@@ -1,5 +1,6 @@
 "use client";
 
+import { ap } from "@/utils/path";
 import { FOOTER_COLUMNS, SITE_NAME, SITE_TAGLINE } from "@/data/site-config";
 import { DotCharacter } from "@/components/dot/DotCharacter";
 import { Heart } from "lucide-react";
@@ -13,7 +14,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <img
-                src="/images/hero/logo.webp"
+                src={ap("/images/hero/logo.webp")}
                 alt="点点智能"
                 width={28}
                 height={28}

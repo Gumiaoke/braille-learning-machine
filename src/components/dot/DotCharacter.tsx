@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
+import { ap } from "@/utils/path";
 import { dotFloatAnimation, dotCelebrate } from "@/styles/animations";
 import type { DotExpression } from "@/types/dot";
 import { dotSizeMap, expressionLabelMap } from "@/types/dot";
@@ -34,7 +35,7 @@ export function DotCharacter({
 
   const content = (
     <img
-      src="/images/hero/dot.webp"
+      src={ap("/images/hero/dot.webp")}
       alt={label}
       width={pixelSize}
       height={Math.round(pixelSize * 1.2)}

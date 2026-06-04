@@ -11,6 +11,7 @@ import { DotCharacter } from "@/components/dot/DotCharacter";
 import { useCart } from "@/hooks/useCart";
 import { product } from "@/data/shop";
 import { cn } from "@/utils/cn";
+import { ap } from "@/utils/path";
 
 export function ShopModule() {
   const { addItem, openCart, openPayment } = useCart();
@@ -178,7 +179,7 @@ function ImageGallery() {
         <AnimatePresence mode="wait" custom={direction}>
           <motion.img
             key={current}
-            src={shopImages[current]}
+            src={ap(shopImages[current])}
             alt={`产品展示 ${current + 1}`}
             className="w-4/5 h-auto max-h-[50vh] object-contain"
             custom={direction}

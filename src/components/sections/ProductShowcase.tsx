@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { DotCharacter } from "@/components/dot/DotCharacter";
+import { ap } from "@/utils/path";
 
 const highlights = [
   {
@@ -60,7 +61,7 @@ export function ProductShowcase() {
           >
             <div className="relative w-full flex items-center justify-center">
               <img
-                src="/images/product-showcase/product.webp"
+                src={ap("/images/product-showcase/product.webp")}
                 alt="点点智能盲文学习机"
                 className="w-3/4 h-auto object-contain drop-shadow-[0_20px_40px_rgba(91,200,255,0.25)]"
               />
